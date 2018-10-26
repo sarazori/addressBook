@@ -31,9 +31,9 @@ class AddressBookDatabaseHelper extends SQLiteOpenHelper {
 
          final String CREATE_USERS_TABLE =
                  "CREATE TABLE " + User.TABLE_NAME + "(" +
-                         User._ID + "integer primary key, " +
-                         User.COLUMN_USERNAME + "TEXT , " +
-                         User.COLUMN_PASSWORD + "TEXT);";
+                         User._ID + " integer primary key, " +
+                         User.COLUMN_USERNAME + " TEXT , " +
+                         User.COLUMN_PASSWORD + " TEXT);";
          db.execSQL(CREATE_USERS_TABLE);//create user table
 //added part
 
